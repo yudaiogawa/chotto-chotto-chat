@@ -1,0 +1,16 @@
+
+
+version: "3.3"
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - "./frontend:/frontend"
+    working_dir: /frontend
+    command: node
+    tty: true
+
+
+
