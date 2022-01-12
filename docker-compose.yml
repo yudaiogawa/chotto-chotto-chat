@@ -9,7 +9,9 @@ services:
     volumes:
       - "./frontend:/frontend"
     working_dir: /frontend
-    command: node
+    command: npm start
+    ports:
+      - 3001:3000
     tty: true
 
 
