@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - "./frontend:/frontend"
+      - "../frontend:/frontend"
     working_dir: /frontend
     command: npm start
     ports:
